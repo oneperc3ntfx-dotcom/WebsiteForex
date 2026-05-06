@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Member</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>Login</title>
 </head>
-
 <body>
 
-<div class="container">
+<h2>Login Member</h2>
 
-    <h1>🔐 MEMBER ACCESS</h1>
+<form method="post">
+    <input name="code" placeholder="Masukkan kode" required>
+    <button type="submit">Masuk</button>
+</form>
 
-    <form method="post">
-        <input type="text" name="code" placeholder="Masukkan kode akses" required>
-        <br><br>
-        <button type="submit">MASUK</button>
-    </form>
-
-    {% if error %}
-    <p class="error">{{error}}</p>
-    {% endif %}
-
-    <p class="info">
-        Belum punya kode?
-        <br>
-        <a href="https://t.me/ADMOnePercentsFX" target="_blank">
-            Hubungi Admin Telegram
-        </a>
-    </p>
-
-</div>
+{% if error %}
+<p>{{error}}</p>
+{% endif %}
 
 </body>
 </html>
