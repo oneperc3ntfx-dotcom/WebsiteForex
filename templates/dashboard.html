@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
+    <title>{{pair}}</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 
@@ -9,15 +9,19 @@
 
 <div class="container">
 
-    <h1>📊 DASHBOARD TRADING</h1>
-
-    <p>Pilih Pair Trading:</p>
+    <h1>📊 {{pair}} ANALYSIS</h1>
 
     <div class="menu">
-        <a href="/pair/xauusd">🟡 XAUUSD</a>
-        <a href="/pair/btcusd">🟠 BTCUSD</a>
-        <a href="/pair/eurusd">🔵 EURUSD</a>
+        <div class="card">📈 Analisa Teknikal</div>
+        <div class="card">📚 Edukasi</div>
+        <div class="card">📰 News Impact</div>
+        <div class="card">📊 Intraday</div>
+        <div class="card">⚡ Scalping Signal</div>
     </div>
+
+    <br>
+
+    <a class="back" href="/dashboard">⬅ Kembali</a>
 
 </div>
 
